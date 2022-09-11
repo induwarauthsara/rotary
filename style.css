@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* outline: solid 0.25rem rgba(255, 0, 0, 0.5); */
 }
 
 
@@ -73,33 +74,74 @@
 }
 
 .home {
-    background: #c7c9c6;
     overflow: hidden;
     max-height: 95vh;
 }
 
 .banner {
-    height: auto;
+    height: 95%;
     overflow: hidden;
-    object-fit: fill;
+    object-fit: cover;
+    max-width: 100%;
 }
 
-.banner::after {
-    content: "dsad";
-    height: 10px;
-    width: 10px;
-    color: red;
-    border-radius: 50%;
+.link-boxs {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 30%;
+    transform: translateY(120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.home-banner-wave {
-    z-index: inherit;
-    transform: translateY(140%);
+.mahagedara {
+    width: 300px;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0.8em;
+    border: 2px solid white;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #102247;
+}
+
+.button2 {
+    background-color: #026a9f;
+}
+
+
+/* ### Welcome #### */
+
+.page {
+    min-height: 100%;
+    width: 100%;
     position: absolute;
 }
 
-.mahagedara-logo {
-    width: 200px;
+.right {
+    width: 50%;
     position: absolute;
-    transform: translateY(55%) translateX(25%);
+    right: 0;
+    height: 30%;
+    transform: translateY(120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
