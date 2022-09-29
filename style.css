@@ -137,11 +137,15 @@ button {
     justify-content: center;
 }
 
+.welcome {
+    transform: translateY(-50px);
+}
+
 .right {
     width: 55%;
     position: absolute;
     right: 0;
-    top: 50px;
+    /* top: -30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,6 +154,7 @@ button {
 .left {
     width: 50%;
     position: absolute;
+    /* top: -80px; */
     left: 0;
     display: flex;
     flex-direction: column;
@@ -188,4 +193,5 @@ p {
     margin: 0;
     padding: 0;
     transform: translate(0, -100%);
+    fill: white;
 }
