@@ -66,11 +66,12 @@
 
 /* ### Home #### */
 
-.container {
+
+/* .container {
     max-height: 90%;
     position: absolute;
     top: 80px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .home {
@@ -124,24 +125,40 @@ button {
 
 .button2 {
     background-color: #026a9f;
-}
+} */
 
 
 /* ### Welcome #### */
 
 .page {
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
 }
 
+.welcome {
+    content: "";
+    z-index: -1;
+    background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5)), url(images/slide-1.jpg) no-repeat 0 15%;
+    animation: animateZ 2s infinite;
+}
+
+@keyframes animateZ {
+    from {
+        transform: translateZ(0px);
+    }
+    to {
+        transform: translateZ(4px);
+    }
+}
+
 .right {
-    width: 50%;
+    width: 55%;
     position: absolute;
-    right: 0;
-    top: 80px;
+    right: 20px;
+    /* top: -30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,13 +167,14 @@ button {
 .left {
     width: 50%;
     position: absolute;
+    /* top: -80px; */
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-p {
+.welcome p {
     font-size: 1.8rem;
     text-align: center;
     width: 90%;
@@ -169,10 +187,53 @@ p {
     width: 150px;
     height: 150px;
     justify-content: center;
+    transform: translate(200%, 25%);
 }
 
 .flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.down-wave {
+    margin: 0;
+    padding: 0;
+    transform: rotate(180deg) translateY(250vh);
+}
+
+.up-wave {
+    margin: 0;
+    padding: 0;
+    transform: translate(0, -100%);
+    fill: white;
+}
+
+
+/* Lecture Page */
+
+.lecturer {
+    background: #000127;
+    position: relative;
+    transform: translateY(-55px);
+}
+
+.down_wave {
+    transform: rotate(180deg) translateY(100px);
+}
+
+.feat {
+    width: 95%;
+}
+
+.wave {
+    display: block;
+    position: absolute;
+}
+
+
+/* Class Page */
+
+.class {
+    transform: translateY(100px);
 }

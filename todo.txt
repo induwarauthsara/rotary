@@ -1,0 +1,7 @@
+1. Hover Animation and Color Changes
+2. Mobile View
+3. CSS Animation
+4. Change Nav bar for lesi Pages (Hone, Contact Us, Time table, About US)
+5. Contact / Login / Time Table HTML Pages
+Paralax for intro
+banner to slideshow
